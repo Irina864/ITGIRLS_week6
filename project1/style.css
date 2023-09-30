@@ -1,0 +1,83 @@
+body {
+    height: 968px;
+    width: 1920px;
+}
+
+h1, span {
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 140px;
+    background-color: rgb(159, 159, 159);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    height: 580px;
+    background-color: rgb(255, 241, 224);
+    display: flex;
+}
+
+aside {
+    background-color: rgb(171, 198, 171);
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-basis: 67%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 57%;
+    width: 100%;
+}
+
+article div span {
+    background-color: rgb(254, 206, 143);
+    display: flex;
+    flex-wrap: wrap;
+    height: 135px;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(159, 159, 159);
+    display: flex;
+    height: 248px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer span {
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    height: 175px;
+    width: 420px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    padding-top: 40px;
+}
+
+.last {
+    width: 1250px;
+}
