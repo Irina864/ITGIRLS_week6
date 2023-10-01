@@ -8,7 +8,7 @@ body {
 body header {
   display: grid;
   grid-template: 100%/15% 1fr 21%;
-  background-color: black;
+  background-color: #1F2022;
 }
 body header .logo {
   font-family: "Josefin Sans", sans-serif;
@@ -34,6 +34,11 @@ body header .button button {
   min-height: 45%;
   min-width: 50%;
 }
+body header .button button:hover {
+  color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #00ADB5;
+}
 body header nav {
   display: grid;
   justify-content: center;
@@ -55,9 +60,96 @@ body header nav ul li {
   display: flex;
   justify-content: center;
 }
+body header nav ul li .this {
+  color: #00ADB5;
+}
 body header nav ul li a {
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
   font-size: 18px;
   color: white;
+}
+body header nav ul li .this:hover, body header nav ul li a:hover {
+  color: #5ddbe2;
+}
+body main {
+  background-color: black;
+  background-image: url(./jessie.png);
+  width: 100%;
+  display: grid;
+  color: white;
+  grid-template: 100%/1fr 48.5% 46.5%;
+}
+body main .prof {
+  grid-area: 1/2/2/3;
+  display: grid;
+  grid-template: 44% 40% 1fr/100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+body main .prof .f-prof {
+  grid-area: 2/1/3/2;
+  color: #00ADB5;
+}
+body main .prof .s-prof {
+  grid-area: 3/1/4/2;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+}
+body main .prof .s-prof .main-img {
+  width: 3%;
+  margin-top: 3%;
+}
+body main .prof .s-prof .main-p {
+  margin-left: 1%;
+}
+body main .about {
+  grid-area: 1/3/2/4;
+  display: grid;
+  grid-template: 17.5% 48% 1fr/100%;
+  font-family: "Poppins", sans-serif;
+  font-family: 16px;
+}
+body main .about .hello {
+  grid-area: 2/1/3/2;
+}
+body main .about .hello span {
+  font-size: 18px;
+}
+body main .about .hello h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+  color: #00ADB5;
+  margin: 0;
+}
+body main .about .hello p {
+  color: rgba(255, 255, 255, 0.6);
+  width: 75%;
+  line-height: 1.7;
+}
+body main .about .shots {
+  grid-area: 3/1/4/2;
+}
+body main .about .shots .shots-start {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .about .shots .shots-start h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+}
+body main .about .shots .shots-start a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #00ADB5;
+  padding-right: 6%;
+}
+body main .about .shots .img {
+  display: flex;
+  justify-content: space-between;
+}
+body main .about .shots .arrows {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
